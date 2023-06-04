@@ -1,16 +1,10 @@
-# dashboard_template_dribbble
+# Flutter Dashboard Template (Dribbble)
 
-A new Flutter project.
+Responsive Dashboard Template UI
 
-## Getting Started
+![dashboard](https://github.com/HanySameh/Flutter-Dashboard-Template/assets/78942298/1fcc64ee-39b4-4c43-aa41-127f8e219450)
 
-This project is a starting point for a Flutter application.
+### Template 
 
-A few resources to get you started if this is your first Flutter project:
+[Dribbble](https://dribbble.com/shots/19952292-Ofinans-Digital-Finance-Dashboard-UI-Concept)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
