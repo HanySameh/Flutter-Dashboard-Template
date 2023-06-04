@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'utils/colors.dart';
+import 'view/screens/home_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -10,12 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Dashboard Template UI',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      theme: ThemeData.dark(useMaterial3: true).copyWith(
+        scaffoldBackgroundColor: darkBlack,
       ),
-      home: null,
+      home: const HomeScreen(),
     );
   }
 }
