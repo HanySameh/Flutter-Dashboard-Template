@@ -42,7 +42,7 @@ class TotalWidget extends StatelessWidget {
                         .copyWith(color: Colors.green),
                   ),
                 ],
-              )
+              ),
             ],
           ),
           SizedBox(

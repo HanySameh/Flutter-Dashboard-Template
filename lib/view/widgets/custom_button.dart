@@ -5,14 +5,21 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
+    required this.width,
+    required this.title,
+    this.isIconButton = false,
   });
+
+  final double width;
+  final String title;
+  final bool isIconButton;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {},
       child: Container(
-        width: context.width * 0.08,
+        width: width,
         height: context.height * 0.05,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.0),
@@ -28,19 +35,21 @@ class CustomButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'Deposit',
-              style: TextStyle(
+            Text(
+              title,
+              style: const TextStyle(
                 fontSize: 15.0,
               ),
             ),
-            SizedBox(
-              width: context.width * 0.005,
-            ),
-            const Icon(
-              Icons.add,
-              size: 20.0,
-            ),
+            if (isIconButton) ...[
+              SizedBox(
+                width: context.width * 0.005,
+              ),
+              const Icon(
+                Icons.add,
+                size: 20.0,
+              ),
+            ],
           ],
         ),
       ),

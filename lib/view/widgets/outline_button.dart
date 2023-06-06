@@ -4,14 +4,19 @@ import 'package:flutter/material.dart';
 class CustomOutlineButton extends StatelessWidget {
   const CustomOutlineButton({
     super.key,
+    required this.width,
+    required this.title,
   });
+
+  final double width;
+  final String title;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {},
       child: Container(
-        width: context.width * 0.08,
+        width: width,
         height: context.height * 0.05,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12.0),
@@ -20,10 +25,10 @@ class CustomOutlineButton extends StatelessWidget {
             color: const Color(0xFFCD5D37),
           ),
         ),
-        child: const Center(
+        child:  Center(
           child: Text(
-            'Withdraw',
-            style: TextStyle(
+            title,
+            style: const TextStyle(
               fontSize: 15.0,
               color: Color(0xFFCD5D37),
             ),

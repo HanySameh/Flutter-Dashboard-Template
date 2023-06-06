@@ -37,11 +37,16 @@ class OverallPortfolioCard extends StatelessWidget {
                 ),
               ),
               const Spacer(),
-              const CustomOutlineButton(),
+              CustomOutlineButton(
+                  width: context.width * 0.08, title: 'Withdraw'),
               SizedBox(
                 width: context.width * 0.015,
               ),
-              const CustomButton()
+              CustomButton(
+                width: context.width * 0.08,
+                title: 'Deposit',
+                isIconButton: true,
+              ),
             ],
           ),
           const Row(
